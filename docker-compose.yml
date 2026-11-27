@@ -1,0 +1,58 @@
+# Local development stack.
+#   docker compose up -d                 → Postgres + Redis only (run the API with uvicorn)
+#   docker compose --profile full up -d  → also builds and runs the API container on :8000
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: taxmantri_postgres
+    environment:
+      POSTGRES_USER: taxmantri
+      POSTGRES_PASSWORD: taxmantri   # local dev only
+      POSTGRES_DB: taxmantri
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U taxmantri"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: taxmantri_redis
+    ports:
+      - "127.0.0.1:6379:6379"
+    command: redis-server --save 60 1 --loglevel warning
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+  api:
+    profiles: ["full"]
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    env_file: .env
+    environment:
+      DATABASE_URL: postgresql+asyncpg://taxmantri:taxmantri@postgres:5432/taxmantri
+      REDIS_URL: redis://redis:6379
+      TRUSTED_PROXY_HOPS: "0"   # no proxy in front locally; Render uses 1
+      PORT: "8000"
+    ports:
+      - "127.0.0.1:8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    mem_limit: 512m   # mimic Render free tier
+
+volumes:
+  postgres_data:
+    driver: local

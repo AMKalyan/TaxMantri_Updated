@@ -1,0 +1,42 @@
+# TaxMantri backend dependencies (Python 3.12)
+# Production image: see backend/Dockerfile. Exact resolved versions are
+# recorded in requirements.lock (pip freeze from the Docker build) — the image installs from the lock.
+# Regenerate after changing this file (clean Linux install), e.g.:
+#   docker run --rm -v "$PWD/backend:/b:ro" python:3.12-slim sh -c "pip install -q -r /b/requirements.txt && pip freeze" > backend/requirements.lock
+
+# --- Web framework ---
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.32,<1.0
+python-multipart>=0.0.18
+
+# --- Validation & config ---
+pydantic>=2.10,<3
+pydantic-settings>=2.6,<3
+
+# --- Database ---
+sqlalchemy[asyncio]>=2.0.36,<2.1
+alembic>=1.14,<2
+asyncpg>=0.30,<1
+
+# --- Cache / rate limiting ---
+redis>=5.2,<7
+
+# --- OCR ---
+pdfplumber>=0.11,<1
+pytesseract>=0.3.13,<1
+pdf2image>=1.17,<2
+Pillow>=11,<13
+python-magic>=0.4.27,<1; sys_platform != "win32"
+python-magic-bin==0.4.14; sys_platform == "win32"
+
+# --- RAG (embeddings come from the Gemini API; no local model) ---
+faiss-cpu>=1.9,<2
+rank-bm25==0.2.2
+numpy>=2.0,<3
+
+# --- LLM (Gemini via its OpenAI-compatible endpoint) ---
+openai>=1.50,<3
+
+
+# --- PDF export ---
+reportlab>=4.2,<5

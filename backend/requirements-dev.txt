@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest>=8.3
+pytest-asyncio>=0.24
+httpx>=0.27
+# Optional: local bge-m3 baseline for the retrieval eval (large download, ~2.3 GB)
+# sentence-transformers>=3.3

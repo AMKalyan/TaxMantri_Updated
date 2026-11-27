@@ -1,0 +1,77 @@
+# TaxMantri .gitignore
+
+
+# Environment secrets — NEVER commit these
+backend/.env
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyc
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Pytest
+.pytest_cache/
+*.pytest_cache
+htmlcov/
+.coverage
+coverage.xml
+
+# Knowledge base generated artifacts (large binary files)
+knowledge_base/indexes/
+knowledge_base/chunks/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Alembic migrations in backend/alembic/versions/ are source-controlled; don't ignore them.
+
+# Temp uploads
+/tmp/
+*.tmp
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+.eslintcache
+.stylelintcache
+*.local
+.pnp.*
+.pnp
+.pnpm-debug.log*
+
+# Vite
+dist/
+frontend/dist/
+.vite/
+
+# The prebuilt search index is committed so the app can load it at start-up
+!knowledge_base/indexes/
+knowledge_base/indexes/*
+!knowledge_base/indexes/kb.faiss
+!knowledge_base/indexes/chunks.json
+!knowledge_base/indexes/meta.json
+
+# Misc
+__MACOSX/
+eval/data/form16/generated*/

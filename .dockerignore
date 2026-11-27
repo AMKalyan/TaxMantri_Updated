@@ -1,0 +1,10 @@
+node_modules
+frontend
+**/__pycache__
+.git
+.env
+**/.env
+eval/results
+tools
+*.md
+!README.md
