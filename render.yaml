@@ -1,0 +1,30 @@
+# Render Blueprint — backend API only.
+# Postgres: Neon (free, does not expire). Redis: Upstash (free, use the rediss:// URL).
+# Secrets marked `sync: false` are entered in the Render dashboard, never committed.
+services:
+  - type: web
+    name: taxmantri-api
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: GEMINI_API_KEY      # https://aistudio.google.com/apikey
+        sync: false
+      - key: DATABASE_URL        # Neon connection string (postgresql://...?sslmode=require)
+        sync: false
+      - key: REDIS_URL           # Upstash rediss://default:<password>@<host>:6379
+        sync: false
+      - key: CORS_ORIGINS        # e.g. https://taxmantri.vercel.app
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEBUG
+        value: "false"
+      - key: RATE_LIMIT_ENABLED
+        value: "true"
+      - key: DATA_RETENTION_HOURS
+        value: "24"
