@@ -1,0 +1,101 @@
+Section 115BAC — Tax on income of individuals, Hindu undivided families, association of persons, body of individuals, and artificial juridical person
+[IT Act 1961, as amended up to Finance Act 2025 — Budget 2025 slabs effective FY 2025-26 / AY 2026-27]
+
+OVERVIEW:
+Section 115BAC introduces the "New Tax Regime" (also called the "Simplified Tax Regime" or "Concessional Tax Regime"). Budget 2025 (Union Budget for FY 2025-26) further modified the slab rates. The new regime is THE DEFAULT regime from AY2024-25 onwards — taxpayers must actively opt out to use the old (regular) regime.
+
+115BAC(1A) — NEW TAX REGIME SLAB RATES for AY 2026-27 (FY 2025-26):
+[As amended by Finance Act 2025, applicable from Assessment Year 2026-27]
+
+Slab (Total Income)                  | Tax Rate
+--------------------------------------|----------
+Up to ₹4,00,000                      | NIL
+₹4,00,001 to ₹8,00,000               | 5%
+₹8,00,001 to ₹12,00,000              | 10%
+₹12,00,001 to ₹16,00,000             | 15%
+₹16,00,001 to ₹20,00,000             | 20%
+₹20,00,001 to ₹24,00,000             | 25%
+Above ₹24,00,000                      | 30%
+
+Note: Basic exemption limit under new regime = ₹4,00,000 (vs ₹2,50,000 under old regime for individuals below 60). The new-regime slabs are the same for all ages.
+
+87A Rebate under new regime (AY 2026-27): Resident individuals with total income up to ₹12,00,000 get a rebate of up to ₹60,000, i.e. ZERO tax. Just above ₹12,00,000, marginal relief limits tax to the income in excess of ₹12,00,000.
+
+Standard Deduction under new regime (AY 2026-27): ₹75,000 (₹50,000 under the old regime). This standard deduction is available to salaried employees and pensioners.
+
+Effective zero-tax scenario: With ₹75,000 standard deduction and ₹12,00,000 rebate threshold:
+Salary income up to ₹12,75,000 → After ₹75,000 SD → ₹12,00,000 taxable income → ZERO TAX (full rebate).
+
+Surcharge under new regime (AY 2026-27):
+- Income > ₹50,00,000 but ≤ ₹1 crore: 10%
+- Income > ₹1 crore but ≤ ₹2 crore: 15%
+- Income > ₹2 crore but ≤ ₹5 crore: 25%
+- Income > ₹5 crore: 25% (capped at 25% under new regime, as opposed to old regime's 37% for income above ₹5 crore)
+Note: Maximum surcharge under new regime is 25%; maximum marginal rate is thus 39% (30% + 25% surcharge + 4% cess).
+
+Health and Education Cess: 4% on (income tax + surcharge).
+
+OLD TAX REGIME SLAB RATES for AY 2026-27 (FY 2025-26):
+[Continuing slabs under regular (old) regime — unchanged]
+
+Slab (Total Income)                  | Tax Rate
+--------------------------------------|----------
+Up to ₹2,50,000                      | NIL
+₹2,50,001 to ₹5,00,000               | 5%
+₹5,00,001 to ₹10,00,000              | 20%
+Above ₹10,00,000                      | 30%
+
+For senior citizens (age 60-79 years): Nil slab up to ₹3,00,000
+For super senior citizens (age 80+ years): Nil slab up to ₹5,00,000
+
+87A Rebate under old regime (AY 2026-27): Up to ₹12,500 rebate for total income ≤ ₹5,00,000.
+
+DEDUCTIONS AND EXEMPTIONS — NEW REGIME vs OLD REGIME:
+
+Under new regime (Section 115BAC), the following deductions/exemptions are NOT available:
+- Section 80C (LIC/PPF/ELSS/NPS employee contribution/home loan principal): NOT available
+- Section 80D (health insurance premium): NOT available
+- Section 80E (education loan interest): NOT available
+- Section 80TTA/80TTB (savings/deposit interest): NOT available
+- Section 80CCD(1B) (additional NPS ₹50,000): NOT available
+- House rent allowance [Section 10(13A)]: NOT available
+- Leave travel allowance [Section 10(5)]: NOT available
+- Children education allowance [Section 10(14)]: NOT available
+- Interest on self-occupied property [Section 24(b)]: NOT available
+- Entertainment allowance [Section 16(ii)] and professional tax [Section 16(iii)]: NOT available (only the standard deduction under Section 16(ia) is allowed)
+- Set-off of house property loss against other heads: NOT available
+- Chapter VI-A deductions (except 80CCD(2), 80JJAA, 80CCH): NOT available
+
+Under new regime, the following ARE STILL AVAILABLE:
+- Standard deduction of ₹75,000 for salaried individuals
+- Section 80CCD(2) — Employer's NPS contribution (up to 14% of salary under the new regime)
+- Section 80CCH — Agniveer Corpus Fund contributions
+- Section 80JJAA — Employment of new employees
+- Gratuity exemption [Section 10(10)]
+- Commutation of pension [Section 10(10A)]
+- Leave encashment on retirement [Section 10(10AA)]
+- Employer's EPF contribution [Section 10(12)]
+- Standard deduction for family pension (₹25,000 or 1/3 of pension, whichever is less)
+
+OPTING OUT of new regime:
+A salaried employee (without business income) can choose the old regime every year in the return itself, filed on or before the due date. Telling the employer only affects TDS during the year; the final choice is made in the ITR.
+
+Business income taxpayers (self-employed) can switch to old regime only once. Once they switch back to old regime, they cannot return to new regime except in one circumstance.
+
+115BAC vs 115BAC(1A):
+115BAC was originally introduced by Finance Act 2020 (AY2021-22 onwards). 115BAC(1A) was inserted by Finance Act 2023 (effective AY2024-25) to make the new regime the default and to introduce the modified slabs. Finance (No.2) Act 2024 raised the new-regime standard deduction from ₹50,000 to ₹75,000 and the 80CCD(2) limit from 10% to 14% (AY 2025-26). Finance Act 2025 revised the slabs to 4/8/12/16/20/24 lakh and raised the 87A rebate threshold from ₹7,00,000 to ₹12,00,000 (AY 2026-27).
+
+COMBINED COMPARISON TABLE — AY 2026-27 (same total income in both regimes, tax including 4% cess):
+
+Total Income      | Old Regime Tax  | New Regime Tax  | Difference
+------------------|-----------------|-----------------|------------------------
+₹5,00,000         | NIL (87A)       | NIL (87A)       | Equal
+₹7,00,000         | ₹54,600         | NIL (87A)       | New regime lower by ₹54,600
+₹10,00,000        | ₹1,17,000       | NIL (87A)       | New regime lower by ₹1,17,000
+₹12,00,000        | ₹1,79,400       | NIL (87A)       | New regime lower by ₹1,79,400
+₹15,00,000        | ₹2,73,000       | ₹1,09,200       | New regime lower by ₹1,63,800
+₹20,00,000        | ₹4,29,000       | ₹2,08,000       | New regime lower by ₹2,21,000
+₹25,00,000        | ₹5,85,000       | ₹3,43,200       | New regime lower by ₹2,41,800
+Note: in practice the old regime's total income is lower than the new regime's for the same salary, because of its extra deductions — compare the two on your own numbers.
+
+At higher income levels with significant deductions (80C: ₹1.5L, 80D: ₹50K, HRA: ₹1L+, 24(b): ₹2L), old regime may become more beneficial. The crossover point depends on individual deductions claimed.

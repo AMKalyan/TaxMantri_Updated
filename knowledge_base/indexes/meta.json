@@ -1,0 +1,8 @@
+{
+  "embedder": "gemini:gemini-embedding-001",
+  "dim": 3072,
+  "chunks": 51,
+  "chunk_words": 350,
+  "overlap_words": 40,
+  "assessment_year": "AY2026-27"
+}
