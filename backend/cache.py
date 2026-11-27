@@ -54,17 +54,27 @@ def make_faq_key(question: str) -> str:
 
 async def create_redis_pool() -> aioredis.Redis:
     """Create the async Redis client and check it with PING."""
+    from urllib.parse import urlsplit
+
+    url = settings.redis_connection_url
     client = aioredis.from_url(
-        settings.redis_url,
+        url,
         encoding="utf-8",
         decode_responses=True,
         max_connections=20,
         health_check_interval=30,   # hosted Redis (Upstash) drops idle connections
         socket_keepalive=True,
     )
-    await client.ping()
-    from urllib.parse import urlsplit
-    logger.info("Redis connection pool established at %s", urlsplit(settings.redis_url).hostname)
+    parts = urlsplit(url)
+    try:
+        await client.ping()
+    except Exception as exc:
+        # Say what went wrong without printing the password in the URL.
+        raise RuntimeError(
+            f"Could not connect to Redis at {parts.scheme}://{parts.hostname}:{parts.port} ({exc}). "
+            "Check REDIS_URL; hosted Redis such as Upstash needs a rediss:// (TLS) URL."
+        ) from exc
+    logger.info("Redis connection pool established at %s (tls=%s)", parts.hostname, parts.scheme == "rediss")
     return client
 
 

@@ -20,3 +20,11 @@ def test_rotating_forged_values_map_to_same_ip():
 
 def test_no_header_uses_socket_peer():
     assert client_ip(_req()) == "10.0.0.5"
+
+
+def test_upstash_redis_url_is_upgraded_to_tls():
+    from backend.config import Settings
+    s = Settings(redis_url=' redis://default:pw@eu1-abc.upstash.io:6379 ')
+    assert s.redis_connection_url == "rediss://default:pw@eu1-abc.upstash.io:6379"
+    assert Settings(redis_url="redis://redis:6379").redis_connection_url == "redis://redis:6379"
+    assert Settings(redis_url="rediss://default:pw@x.upstash.io:6379").redis_connection_url.startswith("rediss://")

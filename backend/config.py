@@ -103,6 +103,18 @@ class Settings(BaseSettings):
         return {}
 
     @property
+    def redis_connection_url(self) -> str:
+        """
+        REDIS_URL with whitespace/quotes stripped. Hosted Redis (Upstash, Redis Cloud)
+        only accepts TLS, but dashboards often show the URL as redis:// next to a
+        separate --tls flag, so upgrade those hosts to rediss:// automatically.
+        """
+        url = self.redis_url.strip().strip('"').strip("'")
+        if url.startswith("redis://") and any(h in url for h in (".upstash.io", ".redislabs.com", ".redis-cloud.com")):
+            url = "rediss://" + url[len("redis://"):]
+        return url
+
+    @property
     def cors_origins_list(self) -> List[str]:
         """Split comma-separated CORS origins into a list."""
         return [o.strip() for o in self.cors_origins.split(",") if o.strip()]
