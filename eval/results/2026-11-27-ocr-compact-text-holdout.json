@@ -1,0 +1,290 @@
+{
+  "layout": "compact",
+  "date": "2026-11-27",
+  "commit": "1f37233",
+  "variant": "text",
+  "samples": 30,
+  "field_accuracy": 0.9231,
+  "wrong_rate": 0.0,
+  "missing_rate": 0.0769,
+  "documents_fully_correct": 0,
+  "per_field": {
+    "basic_salary": {
+      "correct": 0,
+      "wrong": 0,
+      "missing": 30
+    },
+    "professional_tax": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "investments_80c": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "health_insurance_self": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "employee_nps_80ccd1b": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "employer_nps_80ccd2": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "home_loan_interest": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "savings_interest_80tta": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "gross_salary_17_1": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "hra_exempt_10_13a": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "lta_exempt_10_5": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "gross_total_income": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "tds_deducted": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    }
+  },
+  "failures": [
+    {
+      "sample": "F16_001",
+      "field": "basic_salary",
+      "expected": 2515000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_002",
+      "field": "basic_salary",
+      "expected": 870000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_003",
+      "field": "basic_salary",
+      "expected": 1825000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_004",
+      "field": "basic_salary",
+      "expected": 1460000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_005",
+      "field": "basic_salary",
+      "expected": 2710000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_006",
+      "field": "basic_salary",
+      "expected": 1325000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_007",
+      "field": "basic_salary",
+      "expected": 2260000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_008",
+      "field": "basic_salary",
+      "expected": 940000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_009",
+      "field": "basic_salary",
+      "expected": 1555000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_010",
+      "field": "basic_salary",
+      "expected": 4090000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_011",
+      "field": "basic_salary",
+      "expected": 2605000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_012",
+      "field": "basic_salary",
+      "expected": 3180000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_013",
+      "field": "basic_salary",
+      "expected": 4005000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_014",
+      "field": "basic_salary",
+      "expected": 3065000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_015",
+      "field": "basic_salary",
+      "expected": 3165000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_016",
+      "field": "basic_salary",
+      "expected": 2020000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_017",
+      "field": "basic_salary",
+      "expected": 2590000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_018",
+      "field": "basic_salary",
+      "expected": 2820000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_019",
+      "field": "basic_salary",
+      "expected": 1315000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_020",
+      "field": "basic_salary",
+      "expected": 2975000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_021",
+      "field": "basic_salary",
+      "expected": 1260000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_022",
+      "field": "basic_salary",
+      "expected": 1325000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_023",
+      "field": "basic_salary",
+      "expected": 2260000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_024",
+      "field": "basic_salary",
+      "expected": 2200000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_025",
+      "field": "basic_salary",
+      "expected": 2990000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_026",
+      "field": "basic_salary",
+      "expected": 3350000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_027",
+      "field": "basic_salary",
+      "expected": 820000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_028",
+      "field": "basic_salary",
+      "expected": 3130000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_029",
+      "field": "basic_salary",
+      "expected": 1210000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_030",
+      "field": "basic_salary",
+      "expected": 1515000,
+      "got": null,
+      "outcome": "missing"
+    }
+  ]
+}

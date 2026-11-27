@@ -1,0 +1,1115 @@
+{
+  "date": "2026-11-27",
+  "commit": "ccbe35f",
+  "variant": "text",
+  "samples": 30,
+  "field_accuracy": 0.6205,
+  "wrong_rate": 0.1821,
+  "missing_rate": 0.1974,
+  "documents_fully_correct": 0,
+  "per_field": {
+    "basic_salary": {
+      "correct": 9,
+      "wrong": 0,
+      "missing": 21
+    },
+    "professional_tax": {
+      "correct": 14,
+      "wrong": 3,
+      "missing": 13
+    },
+    "investments_80c": {
+      "correct": 17,
+      "wrong": 0,
+      "missing": 13
+    },
+    "health_insurance_self": {
+      "correct": 21,
+      "wrong": 0,
+      "missing": 9
+    },
+    "employee_nps_80ccd1b": {
+      "correct": 23,
+      "wrong": 0,
+      "missing": 7
+    },
+    "employer_nps_80ccd2": {
+      "correct": 26,
+      "wrong": 0,
+      "missing": 4
+    },
+    "home_loan_interest": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "savings_interest_80tta": {
+      "correct": 12,
+      "wrong": 8,
+      "missing": 10
+    },
+    "gross_salary_17_1": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "hra_exempt_10_13a": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "lta_exempt_10_5": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "gross_total_income": {
+      "correct": 0,
+      "wrong": 30,
+      "missing": 0
+    },
+    "tds_deducted": {
+      "correct": 0,
+      "wrong": 30,
+      "missing": 0
+    }
+  },
+  "failures": [
+    {
+      "sample": "F16_001",
+      "field": "savings_interest_80tta",
+      "expected": 7200,
+      "got": 22110,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_001",
+      "field": "gross_total_income",
+      "expected": 902500,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_001",
+      "field": "tds_deducted",
+      "expected": 22110,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_002",
+      "field": "basic_salary",
+      "expected": 3715000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_002",
+      "field": "professional_tax",
+      "expected": 2400,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_002",
+      "field": "investments_80c",
+      "expected": 150000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_002",
+      "field": "health_insurance_self",
+      "expected": 10500,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_002",
+      "field": "employee_nps_80ccd1b",
+      "expected": 50000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_002",
+      "field": "gross_total_income",
+      "expected": 3463600,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_002",
+      "field": "tds_deducted",
+      "expected": 306370,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_003",
+      "field": "savings_interest_80tta",
+      "expected": 0,
+      "got": 119400,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_003",
+      "field": "gross_total_income",
+      "expected": 1695000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_003",
+      "field": "tds_deducted",
+      "expected": 119400,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_004",
+      "field": "basic_salary",
+      "expected": 2645000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_004",
+      "field": "professional_tax",
+      "expected": 2500,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_004",
+      "field": "investments_80c",
+      "expected": 150000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_004",
+      "field": "health_insurance_self",
+      "expected": 14000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_004",
+      "field": "employee_nps_80ccd1b",
+      "expected": 29000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_004",
+      "field": "gross_total_income",
+      "expected": 2575500,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_004",
+      "field": "tds_deducted",
+      "expected": 201900,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_005",
+      "field": "basic_salary",
+      "expected": 1470000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_005",
+      "field": "professional_tax",
+      "expected": 2400,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_005",
+      "field": "investments_80c",
+      "expected": 101000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_005",
+      "field": "health_insurance_self",
+      "expected": 13500,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_005",
+      "field": "employee_nps_80ccd1b",
+      "expected": 16000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_005",
+      "field": "savings_interest_80tta",
+      "expected": 9300,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_005",
+      "field": "gross_total_income",
+      "expected": 1375600,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_005",
+      "field": "tds_deducted",
+      "expected": 64290,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_006",
+      "field": "basic_salary",
+      "expected": 520000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_006",
+      "field": "professional_tax",
+      "expected": 2500,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_006",
+      "field": "investments_80c",
+      "expected": 150000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_006",
+      "field": "health_insurance_self",
+      "expected": 18000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_006",
+      "field": "employee_nps_80ccd1b",
+      "expected": 50000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_006",
+      "field": "savings_interest_80tta",
+      "expected": 3800,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_006",
+      "field": "gross_total_income",
+      "expected": 112500,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_006",
+      "field": "tds_deducted",
+      "expected": 0,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_007",
+      "field": "basic_salary",
+      "expected": 2585000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_007",
+      "field": "gross_total_income",
+      "expected": 2510000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_007",
+      "field": "tds_deducted",
+      "expected": 217200,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_008",
+      "field": "basic_salary",
+      "expected": 825000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_008",
+      "field": "investments_80c",
+      "expected": 97500,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_008",
+      "field": "savings_interest_80tta",
+      "expected": 6500,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_008",
+      "field": "gross_total_income",
+      "expected": 558000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_008",
+      "field": "tds_deducted",
+      "expected": 0,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_009",
+      "field": "professional_tax",
+      "expected": 0,
+      "got": 75000,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_009",
+      "field": "savings_interest_80tta",
+      "expected": 0,
+      "got": 74040,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_009",
+      "field": "gross_total_income",
+      "expected": 1375000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_009",
+      "field": "tds_deducted",
+      "expected": 74040,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_010",
+      "field": "basic_salary",
+      "expected": 1565000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_010",
+      "field": "gross_total_income",
+      "expected": 1490000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_010",
+      "field": "tds_deducted",
+      "expected": 94800,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_011",
+      "field": "basic_salary",
+      "expected": 2210000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_011",
+      "field": "professional_tax",
+      "expected": 2400,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_011",
+      "field": "investments_80c",
+      "expected": 143000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_011",
+      "field": "employee_nps_80ccd1b",
+      "expected": 50000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_011",
+      "field": "savings_interest_80tta",
+      "expected": 9200,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_011",
+      "field": "gross_total_income",
+      "expected": 2098600,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_011",
+      "field": "tds_deducted",
+      "expected": 143560,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_012",
+      "field": "basic_salary",
+      "expected": 1250000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_012",
+      "field": "professional_tax",
+      "expected": 2500,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_012",
+      "field": "investments_80c",
+      "expected": 150000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_012",
+      "field": "health_insurance_self",
+      "expected": 11000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_012",
+      "field": "gross_total_income",
+      "expected": 1197500,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_012",
+      "field": "tds_deducted",
+      "expected": 40380,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_013",
+      "field": "basic_salary",
+      "expected": 3040000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_013",
+      "field": "professional_tax",
+      "expected": 2400,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_013",
+      "field": "investments_80c",
+      "expected": 125000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_013",
+      "field": "savings_interest_80tta",
+      "expected": 2200,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_013",
+      "field": "gross_total_income",
+      "expected": 2987600,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_013",
+      "field": "tds_deducted",
+      "expected": 259240,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_014",
+      "field": "gross_total_income",
+      "expected": 565000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_014",
+      "field": "tds_deducted",
+      "expected": 0,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_015",
+      "field": "savings_interest_80tta",
+      "expected": 0,
+      "got": 141740,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_015",
+      "field": "gross_total_income",
+      "expected": 2126600,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_015",
+      "field": "tds_deducted",
+      "expected": 141740,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_016",
+      "field": "basic_salary",
+      "expected": 1995000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_016",
+      "field": "professional_tax",
+      "expected": 2400,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_016",
+      "field": "savings_interest_80tta",
+      "expected": 4500,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_016",
+      "field": "gross_total_income",
+      "expected": 1906600,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_016",
+      "field": "tds_deducted",
+      "expected": 144250,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_017",
+      "field": "basic_salary",
+      "expected": 905000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_017",
+      "field": "employer_nps_80ccd2",
+      "expected": 36200,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_017",
+      "field": "gross_total_income",
+      "expected": 830000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_017",
+      "field": "tds_deducted",
+      "expected": 11250,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_018",
+      "field": "basic_salary",
+      "expected": 3660000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_018",
+      "field": "employer_nps_80ccd2",
+      "expected": 146400,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_018",
+      "field": "gross_total_income",
+      "expected": 3585000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_018",
+      "field": "tds_deducted",
+      "expected": 328630,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_019",
+      "field": "basic_salary",
+      "expected": 1475000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_019",
+      "field": "professional_tax",
+      "expected": 2500,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_019",
+      "field": "investments_80c",
+      "expected": 150000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_019",
+      "field": "health_insurance_self",
+      "expected": 19000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_019",
+      "field": "gross_total_income",
+      "expected": 1049500,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_019",
+      "field": "tds_deducted",
+      "expected": 21660,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_020",
+      "field": "savings_interest_80tta",
+      "expected": 0,
+      "got": 257110,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_020",
+      "field": "gross_total_income",
+      "expected": 2858600,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_020",
+      "field": "tds_deducted",
+      "expected": 257110,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_021",
+      "field": "basic_salary",
+      "expected": 1135000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_021",
+      "field": "gross_total_income",
+      "expected": 1060000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_021",
+      "field": "tds_deducted",
+      "expected": 43200,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_022",
+      "field": "basic_salary",
+      "expected": 3210000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_022",
+      "field": "professional_tax",
+      "expected": 2400,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_022",
+      "field": "investments_80c",
+      "expected": 150000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_022",
+      "field": "health_insurance_self",
+      "expected": 18000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_022",
+      "field": "savings_interest_80tta",
+      "expected": 1900,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_022",
+      "field": "gross_total_income",
+      "expected": 3080600,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_022",
+      "field": "tds_deducted",
+      "expected": 265280,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_023",
+      "field": "basic_salary",
+      "expected": 3000000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_023",
+      "field": "professional_tax",
+      "expected": 2500,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_023",
+      "field": "investments_80c",
+      "expected": 42000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_023",
+      "field": "health_insurance_self",
+      "expected": 18000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_023",
+      "field": "employee_nps_80ccd1b",
+      "expected": 50000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_023",
+      "field": "savings_interest_80tta",
+      "expected": 5200,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_023",
+      "field": "gross_total_income",
+      "expected": 2715500,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_023",
+      "field": "tds_deducted",
+      "expected": 228030,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_024",
+      "field": "professional_tax",
+      "expected": 0,
+      "got": 75000,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_024",
+      "field": "savings_interest_80tta",
+      "expected": 0,
+      "got": 81600,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_024",
+      "field": "gross_total_income",
+      "expected": 1380000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_024",
+      "field": "tds_deducted",
+      "expected": 81600,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_025",
+      "field": "basic_salary",
+      "expected": 1820000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_025",
+      "field": "professional_tax",
+      "expected": 2400,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_025",
+      "field": "investments_80c",
+      "expected": 79500,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_025",
+      "field": "health_insurance_self",
+      "expected": 22500,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_025",
+      "field": "savings_interest_80tta",
+      "expected": 8000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_025",
+      "field": "gross_total_income",
+      "expected": 1740600,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_025",
+      "field": "tds_deducted",
+      "expected": 111670,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_026",
+      "field": "professional_tax",
+      "expected": 0,
+      "got": 75000,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_026",
+      "field": "savings_interest_80tta",
+      "expected": 0,
+      "got": 280820,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_026",
+      "field": "gross_total_income",
+      "expected": 3170000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_026",
+      "field": "tds_deducted",
+      "expected": 280820,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_027",
+      "field": "savings_interest_80tta",
+      "expected": 0,
+      "got": 316200,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_027",
+      "field": "gross_total_income",
+      "expected": 3335000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_027",
+      "field": "tds_deducted",
+      "expected": 316200,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_028",
+      "field": "basic_salary",
+      "expected": 1520000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_028",
+      "field": "employer_nps_80ccd2",
+      "expected": 30400,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_028",
+      "field": "gross_total_income",
+      "expected": 1445000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_028",
+      "field": "tds_deducted",
+      "expected": 85750,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_029",
+      "field": "basic_salary",
+      "expected": 1570000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_029",
+      "field": "employer_nps_80ccd2",
+      "expected": 31400,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_029",
+      "field": "gross_total_income",
+      "expected": 1495000,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_029",
+      "field": "tds_deducted",
+      "expected": 91630,
+      "got": 17,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_030",
+      "field": "basic_salary",
+      "expected": 590000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_030",
+      "field": "professional_tax",
+      "expected": 2400,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_030",
+      "field": "investments_80c",
+      "expected": 150000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_030",
+      "field": "employee_nps_80ccd1b",
+      "expected": 50000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_030",
+      "field": "savings_interest_80tta",
+      "expected": 1200,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_030",
+      "field": "gross_total_income",
+      "expected": 537600,
+      "got": 6,
+      "outcome": "wrong"
+    },
+    {
+      "sample": "F16_030",
+      "field": "tds_deducted",
+      "expected": 0,
+      "got": 17,
+      "outcome": "wrong"
+    }
+  ]
+}

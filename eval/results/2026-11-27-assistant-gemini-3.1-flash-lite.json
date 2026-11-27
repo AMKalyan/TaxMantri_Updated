@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-27",
+  "commit": "12b8849",
+  "provider": "gemini",
+  "model": "gemini-3.1-flash-lite",
+  "passed": 6,
+  "total": 7,
+  "cases": [
+    {
+      "id": "whatif_nps",
+      "question": "Which regime is better for me, and what if I put 50,000 into NPS under 80CCD(1B)?",
+      "passed": true,
+      "missing": [],
+      "forbidden": [],
+      "seconds": 61.1,
+      "tools": [
+        "get_my_profile",
+        "what_if"
+      ],
+      "grounded": true,
+      "words": 83,
+      "answer": "The new tax regime is better for you. Under the old regime, your tax drops from ₹1,56,000 to ₹1,40,400 after investing ₹50,000 in NPS under section 80CCD(1B). However, your tax in the new regime remains ₹1,06,860 regardless of this investment because the new regime does not allow this deduction. Even with the NPS contribution, the new regime saves you ₹33,540 compared to the old regime. Unless you have other large deductions, the new regime is the more tax-efficient choice for your current profile."
+    },
+    {
+      "id": "my_current_tax",
+      "question": "How much tax do I pay in each regime?",
+      "passed": true,
+      "missing": [],
+      "forbidden": [],
+      "seconds": 34.7,
+      "tools": [
+        "get_my_profile",
+        "what_if"
+      ],
+      "grounded": true,
+      "words": 86,
+      "answer": "Under the old tax regime, your taxable income is ₹11,25,000 and your total tax is ₹1,56,000. Under the new tax regime, your taxable income is ₹14,85,000 and your total tax is ₹1,06,860. The new regime is more beneficial, saving you ₹49,140. You could save more in the old regime by claiming home loan interest under Section 24(b), contributing to NPS under Section 80CCD(1B), or paying parent health insurance under Section 80D. In the new regime, employer NPS contributions under Section 80CCD(2) could further reduce your tax."
+    },
+    {
+      "id": "hypothetical_14L",
+      "question": "I earn 14 lakh salary, nothing else. How much tax in the new regime?",
+      "passed": true,
+      "missing": [],
+      "forbidden": [],
+      "seconds": 50.5,
+      "tools": [
+        "calculate_tax"
+      ],
+      "grounded": true,
+      "words": 56,
+      "answer": "For a salary of ₹14,00,000, the new tax regime is better for you. Your total tax liability under the new regime is ₹81,900, compared to ₹2,26,200 under the old regime. This calculation includes the standard deduction of ₹75,000 available under the new regime [Section 16(ia), IT Act 1961]. You save ₹1,44,300 by choosing the new regime."
+    },
+    {
+      "id": "zero_tax_1275",
+      "question": "Is a salary of 12.75 lakh tax-free under the new regime?",
+      "passed": true,
+      "missing": [],
+      "forbidden": [],
+      "seconds": 48.1,
+      "tools": [
+        "calculate_tax"
+      ],
+      "grounded": true,
+      "words": 81,
+      "answer": "A salary of ₹12,75,000 is tax-free under the new regime for AY 2026-27. This is because the new regime provides a standard deduction of ₹75,000, which reduces your taxable income to ₹12,00,000. Under the new tax structure, the tax rebate under Section 87A covers the entire tax liability for taxable incomes up to ₹12,00,000. Therefore, your total tax payable is ₹0. You should opt for the new regime as it is more beneficial than the old regime for this salary level."
+    },
+    {
+      "id": "itr1_two_houses",
+      "question": "Can I file ITR-1 if I own two houses?",
+      "passed": true,
+      "missing": [],
+      "forbidden": [],
+      "seconds": 8.1,
+      "tools": [
+        "search_tax_law"
+      ],
+      "grounded": true,
+      "words": 67,
+      "answer": "Yes, you can file ITR-1 for the Assessment Year 2026-27 if you own up to two house properties, provided you meet all other eligibility criteria [ITR-1 Instructions, IT Act 1961]. You must be a resident individual with a total income not exceeding ₹50,00,000, and you cannot have any brought-forward losses from these properties. If you own more than two houses, you are not eligible to use ITR-1."
+    },
+    {
+      "id": "80c_limit",
+      "question": "What is the maximum deduction under section 80C?",
+      "passed": false,
+      "missing": [
+        "1,50,000"
+      ],
+      "forbidden": [],
+      "seconds": 73.5,
+      "tools": [],
+      "grounded": false,
+      "words": 28,
+      "answer": "ERROR: Error code: 503 - [{'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}]"
+    },
+    {
+      "id": "marginal_relief",
+      "question": "My taxable income is 12.1 lakh in the new regime. Do I lose the whole rebate?",
+      "passed": true,
+      "missing": [],
+      "forbidden": [],
+      "seconds": 24.8,
+      "tools": [
+        "search_tax_law"
+      ],
+      "grounded": true,
+      "words": 78,
+      "answer": "No, you do not lose the entire rebate. Under the new regime for AY 2026-27, if your total income exceeds ₹12,00,000, you are eligible for marginal relief [Section 87A, IT Act 1961]. This ensures that your tax payable does not exceed the amount by which your total income exceeds ₹12,00,000. For example, if your total income is ₹12,10,000, your tax liability is capped at ₹10,000 plus applicable cess, rather than the full tax calculated on the slab rates."
+    }
+  ]
+}

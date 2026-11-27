@@ -1,0 +1,101 @@
+{
+  "layout": "official",
+  "date": "2026-11-27",
+  "commit": "unknown",
+  "variant": "scan_pdf",
+  "samples": 30,
+  "field_accuracy": 0.9923,
+  "wrong_rate": 0.0026,
+  "missing_rate": 0.0051,
+  "documents_fully_correct": 27,
+  "per_field": {
+    "basic_salary": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "professional_tax": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "investments_80c": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "health_insurance_self": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "employee_nps_80ccd1b": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "employer_nps_80ccd2": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "home_loan_interest": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "savings_interest_80tta": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "gross_salary_17_1": {
+      "correct": 29,
+      "wrong": 0,
+      "missing": 1
+    },
+    "hra_exempt_10_13a": {
+      "correct": 29,
+      "wrong": 0,
+      "missing": 1
+    },
+    "lta_exempt_10_5": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    },
+    "gross_total_income": {
+      "correct": 29,
+      "wrong": 1,
+      "missing": 0
+    },
+    "tds_deducted": {
+      "correct": 30,
+      "wrong": 0,
+      "missing": 0
+    }
+  },
+  "failures": [
+    {
+      "sample": "F16_004",
+      "field": "hra_exempt_10_13a",
+      "expected": 168000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_015",
+      "field": "gross_salary_17_1",
+      "expected": 735000,
+      "got": null,
+      "outcome": "missing"
+    },
+    {
+      "sample": "F16_018",
+      "field": "gross_total_income",
+      "expected": 2998000,
+      "got": 299800000,
+      "outcome": "wrong"
+    }
+  ]
+}
